@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Крестики-нолики с ИИ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Крестики-нолики</h1>
+  
+  
+  <div class="controls">
+    <label>
+      <input type="radio" name="mode" value="pvp" checked onchange="setMode('pvp')"> 
+      2 Игрока
+    </label>
+    <label>
+      <input type="radio" name="mode" value="ai" onchange="setMode('ai')"> 
+      Против Компьютера
+    </label>
+  </div>
+
+  <div id="status">Ход: X</div>
+  <div id="board"></div>
+  <button onclick="resetGame()">Новая игра</button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
